@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-bphi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/rhtap-demo-pdke-tenant/rhtap-demo-app/hacbs-test-project-bphi@sha256:e79e3b342ff361575c5afaa56c0bf4a6dbc137ec6ec7ac53cb4e5058544f5323
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
